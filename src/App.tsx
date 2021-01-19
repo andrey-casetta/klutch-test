@@ -8,6 +8,7 @@ import LoanRealized from './pages/LoanRealized';
 import LoanValues from './pages/LoanValues';
 import Main from './pages/Main';
 import RequireLoan from './pages/RequireLoan';
+import SolicitationDetails from './pages/SolicitationDetails';
 
 import GlobalStyle from './styles/global';
 
@@ -20,7 +21,8 @@ function App() {
       {/* <RequireLoan /> */}
       {/* <ChooseMode /> */}
       {/* <LoanValues /> */}
-      <LoanRealized />
+      {/* <LoanRealized /> */}
+      <SolicitationDetails />
       {/* <Footer /> */}
       <GlobalStyle />
     </>

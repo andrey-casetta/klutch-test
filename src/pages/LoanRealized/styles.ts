@@ -38,13 +38,18 @@ export const Content = styled.div`
   }
 
   .solicitationInfo {
-    margin-top: 25px;
+    margin-top: 20px;
+
+    .money {
+      color: #31ac2b;
+      margin: 0;
+    }
   }
 
   .box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     width: 613px;
     height: 96px;
@@ -65,6 +70,20 @@ export const Content = styled.div`
       font-size: 21px;
       font-family: 'Flexo BoldIt';
       margin-left: 24px;
+
+      &.orange {
+        color: #ef9c4b;
+      }
+
+      &.italic {
+        font-family: 'Flexo BoldIt';
+        font-size: 32px;
+      }
+
+      &.bold {
+        font-family: 'Flexo Bold';
+        font-size: 30px;
+      }
     }
 
     input {
@@ -78,13 +97,27 @@ export const Content = styled.div`
 
       margin: 18px 28px 18px 0px;
     }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    svg {
+      margin: 0 23px;
+    }
+
+    svg:first-child {
+      margin-left: 40px;
+    }
   }
 
   section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 50px;
 
     h1 {
       color: #228a95;
@@ -127,7 +160,7 @@ export const Content = styled.div`
       }
 
       &:first-child {
-        margin-right: 20px;
+        margin-right: 35px;
       }
     }
 
@@ -135,7 +168,7 @@ export const Content = styled.div`
       display: flex;
 
       & + div {
-        margin-top: 15px;
+        margin-top: 33px;
       }
 
       .box {
@@ -143,9 +176,31 @@ export const Content = styled.div`
       }
     }
 
-    .lower {
+    .details {
       display: flex;
-      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        margin-top: 30px;
+        width: 420px;
+        height: 95px;
+        background-color: #228a95;
+        border: 0;
+        border-radius: 4px;
+
+        color: #fff;
+        font-size: 36px;
+        font-family: 'Flexo Bold';
+      }
+
+      span {
+        margin-top: 17px;
+        color: #228a95;
+        font-size: 18px;
+        font-family: 'Flexo Regular';
+      }
     }
   }
 `;

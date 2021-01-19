@@ -40,16 +40,13 @@ export const Content = styled.div`
   .card-data {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     align-self: center;
-    margin-top: 105px;
+    margin-top: 75px;
     width: 1000px;
 
     div {
-      /* width: 100%; */
       display: flex;
       flex-direction: column;
-      margin: 20px;
       text-align: center;
       width: 472px;
     }
@@ -93,19 +90,39 @@ export const Content = styled.div`
   }
 `;
 
-export const Input = styled.input`
+export const InputBox = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 74px;
   margin-top: 27px;
 
   background-color: #f8f8f8;
-  color: #777777;
-
-  font-size: 18px;
-  font-family: 'Flexo BoldIt';
-
-  padding: 25px;
 
   border: 0;
   border-radius: 3px;
+
+  input {
+    width: 100%;
+    height: 50%;
+    margin: 25px 28px;
+    flex: 1;
+
+    border: 0;
+    background-color: #f8f8f8;
+
+    color: #777777;
+    font-size: 18px;
+    font-family: 'Flexo BoldIt';
+  }
+
+  a {
+    color: #777777;
+    font-size: 18px;
+    font-family: 'Flexo Regular';
+    margin: 25px 28px;
+    text-decoration: underline;
+  }
 `;

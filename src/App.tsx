@@ -2,7 +2,10 @@ import React from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import './fonts/Flexo/Fonts.css';
+import ChooseMode from './pages/ChooseMode';
 import Loan from './pages/Loan';
+import LoanRealized from './pages/LoanRealized';
+import LoanValues from './pages/LoanValues';
 import Main from './pages/Main';
 import RequireLoan from './pages/RequireLoan';
 
@@ -14,7 +17,10 @@ function App() {
       <Header />
       {/* <Main /> */}
       {/* <Loan /> */}
-      <RequireLoan />
+      {/* <RequireLoan /> */}
+      {/* <ChooseMode /> */}
+      {/* <LoanValues /> */}
+      <LoanRealized />
       {/* <Footer /> */}
       <GlobalStyle />
     </>

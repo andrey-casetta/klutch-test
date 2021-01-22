@@ -1,5 +1,18 @@
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Inicialização
+
+Para instalação de dependências necessárias, utilizar o comando
+
+### 'yarn'
+
+caso esteja usando yarn, caso esteja usando npm, utilizar:
+
+### 'npm install'
+
+Após isso, usar:
+
+### 'yarn start' ou 'npm start'
+
+Instruções Yarn
 
 ### `yarn test`
 

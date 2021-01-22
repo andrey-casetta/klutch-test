@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Content } from './styles';
 import Plus from '../../assets/plus.png';
 import Wallet from '../../assets/wallet.png';
+import { Link } from 'react-router-dom';
 
 const ChooseMode: React.FC = () => {
   return (
@@ -14,7 +15,9 @@ const ChooseMode: React.FC = () => {
         </div>
         <div className='buttons'>
           <h1>Escolha a modalidade:</h1>
-          <button>Cartão de Crédito</button>
+          <Link to='/loanValues'>
+            <button>Cartão de Crédito</button>
+          </Link>
           <h2>Ou</h2>
           <button>Crédito Consignado</button>
           <span>Em Breve</span>

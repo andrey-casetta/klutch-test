@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Content, InputBox } from './styles';
 import Plus from '../../assets/plus.png';
 import Wallet from '../../assets/wallet.png';
+import { Link } from 'react-router-dom';
 
 const RequireLoan: React.FC = () => {
   return (
@@ -17,16 +18,16 @@ const RequireLoan: React.FC = () => {
           <div className='data'>
             <h1>Insira os dados do Cartão:</h1>
             <InputBox>
-              <input type='text' />
+              <input type='text' placeholder='Nome' />
             </InputBox>
             <InputBox>
-              <input type='text' />
+              <input type='number' placeholder='Número do Cartão' />
             </InputBox>
             <InputBox>
-              <input type='text' />
+              <input type='number' placeholder='Data de Validade' />
             </InputBox>
             <InputBox>
-              <input type='text' />
+              <input type='number' placeholder='CVC' />
             </InputBox>
           </div>
           <div className='media'>
@@ -37,7 +38,7 @@ const RequireLoan: React.FC = () => {
                 placeholder='Cartão de Crédito (Frente)'
                 disabled
               />
-              <a href='/'>Adicionar</a>
+              <a href='#'>Adicionar</a>
             </InputBox>
             <InputBox>
               <input
@@ -45,7 +46,7 @@ const RequireLoan: React.FC = () => {
                 placeholder='Cartão de Crédito (Verso)'
                 disabled
               />
-              <a href='/'>Adicionar</a>
+              <a href='#'>Adicionar</a>
             </InputBox>
             <InputBox>
               <input
@@ -53,7 +54,7 @@ const RequireLoan: React.FC = () => {
                 placeholder='Selfie com cartão de crédito'
                 disabled
               />
-              <a href='/'>Adicionar</a>
+              <a href='#'>Adicionar</a>
             </InputBox>
 
             <p>
@@ -63,7 +64,9 @@ const RequireLoan: React.FC = () => {
           </div>
         </div>
 
-        <button>Continuar</button>
+        <Link to='/mode'>
+          <button>Continuar</button>
+        </Link>
       </Content>
     </Container>
   );

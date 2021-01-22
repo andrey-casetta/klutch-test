@@ -66,26 +66,27 @@ export const Content = styled.div`
     }
   }
 
-  button {
-    width: 390px;
-    height: 98px;
-
+  a {
     align-self: center;
+    button {
+      width: 390px;
+      height: 98px;
 
-    margin-top: 70px;
+      margin-top: 70px;
 
-    font-size: 39px;
-    font-family: 'Flexo Bold';
+      font-size: 39px;
+      font-family: 'Flexo Bold';
 
-    background-color: #228a95;
-    border: 0;
-    border-radius: 3px;
-    color: #fff;
+      background-color: #228a95;
+      border: 0;
+      border-radius: 3px;
+      color: #fff;
 
-    transition: background-color 0.2s;
+      transition: background-color 0.2s;
 
-    &:hover {
-      background-color: ${shade(0.1, '#228a95')};
+      &:hover {
+        background-color: ${shade(0.1, '#228a95')};
+      }
     }
   }
 `;

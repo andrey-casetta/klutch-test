@@ -10,6 +10,8 @@ export default createGlobalStyle`
 body {
     font-family: 'Flexo Bold';
     background-color:#fff;
+    margin-bottom:50px;
+
 }
 
 button {

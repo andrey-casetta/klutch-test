@@ -12,6 +12,11 @@ export const Container = styled.div`
   height: 400px;
 `;
 
+export const NotFound = styled.span`
+  margin-top: 30px;
+  color: #c62828;
+`;
+
 export const Content = styled.div`
   display: flex;
   flex-direction: column;

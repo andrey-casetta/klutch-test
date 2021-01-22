@@ -5,6 +5,7 @@ import Wallet from '../../assets/wallet.png';
 import { FiCheck } from 'react-icons/fi';
 import { FaCreditCard } from 'react-icons/fa';
 import cardImage from '../../assets/wallet.svg';
+import { Link } from 'react-router-dom';
 
 const LoanRealized: React.FC = () => {
   return (
@@ -75,7 +76,9 @@ const LoanRealized: React.FC = () => {
                   <FiCheck size={50} color='#228A95' />
                 </div>
               </div>
-              <button>Detalhe da Solicitação</button>
+              <Link to='solicitation'>
+                <button>Detalhe da Solicitação</button>
+              </Link>
               <span>O CredFica avaliará a solicitação.</span>
             </div>
           </div>
